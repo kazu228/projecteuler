@@ -7,7 +7,7 @@
 
 def is_prime_number(number):
     # 素数判定
-    for i in range(2, number):
+    for i in range(2, number):   #回数が多いとここがバグる
         if number % i == 0:
             return False
         
